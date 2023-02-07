@@ -1,0 +1,27 @@
+<html>
+	<head>
+		<script src="G:/js/jquery-3.5.1.js"></script>
+    	<script>
+
+        	$(function(){
+							var html = $("#div0").html();
+
+							$("#btn").click(function(){
+								$tr = $(html);
+								$tr.attr("href","https://www.baidu.com");//改变链接内容
+								$tr.html('#'+Math.floor(Math.random()*0xffffff).toString(16));//改变链接文字
+								$tr.css("background-color",'#'+Math.floor(Math.random()*0xffffff).toString(16));//生成随机颜色
+								$("#div0").append($tr);
+							})
+            });
+
+        </script>
+    </head>
+    <body>
+				<div id = "div0">
+						<a id="link" href="https://www.runoob.com/js/js-htmldom.html">哈哈哈</a><br>
+				</div>
+				<input id="btn" type="button" value="点击">
+
+    </body>
+</html>
