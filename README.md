@@ -1,2 +1,2 @@
-# absolutemind.github.io
-my page
+# 先建一个
+不知道写啥
